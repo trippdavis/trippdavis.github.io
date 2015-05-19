@@ -17,11 +17,10 @@
 </head>
 
 <body>
-  <canvas id="game-canvas" width="800" height="600"></canvas>
+  <div class="game-view">
+  </div>
 
   <script>
-    var canvasEl = document.getElementsByTagName("canvas")[0];
-    var ctx = canvasEl.getContext('2d');
     var backgroundImg = new Image();
     var spaceshipImg = new Image();
     spaceshipImg.src = "lib/spaceship.png";
@@ -29,11 +28,8 @@
     spaceshipRecoilImg.src = "lib/spaceshipRecoil.png";
     var asteroidImg = new Image();
     asteroidImg.src = "lib/asteroid.png";
-    backgroundImg.onload = function () {
-      ctx.drawImage(backgroundImg, 0, 0);
-    };
     backgroundImg.src = 'lib/myImage.png';
-    window.gameView = new Asteroids.GameView(ctx);
+    window.gameView = new Asteroids.GameView();
     window.gameView.start();
   </script>
 
@@ -46,7 +42,7 @@
       and a laser which shoots a single laser beam. Bullets will be destroyed after
       hitting an asteroid while lasers will survive and can destroy multiple asteroids.
       You have limited ammo for each gun, but ammo refills randomly appear as small
-      circles: green for pistol, red for shotgun, and blue for laser. Enjoy!  
+      circles: green for pistol, red for shotgun, and blue for laser. Enjoy!
     </div>
     <div class="controls">
       <h2>Controls:</h2>
