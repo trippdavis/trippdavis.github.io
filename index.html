@@ -13,6 +13,7 @@
   <script src="lib/laser.js"></script>
   <script src="lib/game.js"></script>
   <script src="lib/gameView.js"></script>
+  <link rel="stylesheet" type="text/css" href="./stylesheet.css">
 </head>
 
 <body>
@@ -35,6 +36,46 @@
     window.gameView = new Asteroids.GameView(ctx);
     window.gameView.start();
   </script>
+
+  <div id="game-instructions">
+    <div class="intructions">
+      <h2>Instructions:</h2>
+      You get points by shooting asteroids. Getting hit by an asteroid will result
+      in losing a life. Your ship is equipped with three different guns for you
+      to use: a pistol which shoots a single bullet, a shotgun which shoots 5 bullets,
+      and a laser which shoots a single laser beam. Bullets will be destroyed after
+      hitting an asteroid while lasers will survive and can destroy multiple asteroids.
+      You have limited ammo for each gun, but ammo refills randomly appear as small
+      circles: green for pistol, red for shotgun, and blue for laser. Enjoy!  
+    </div>
+    <div class="controls">
+      <h2>Controls:</h2>
+        <div class="control">
+          <div class="key">&uarr;</div> <div class="function">Forward</div>
+        </div>
+        <div class="control">
+          <div class="key">&darr;</div> <div class="function">Backward</div>
+        </div>
+        <div class="control">
+          <div class="key">&rarr;</div> <div class="function">Right</div>
+        </div>
+        <div class="control">
+          <div class="key">&larr;</div> <div class="function">Left</div>
+        </div>
+        <div class="control">
+          <div class="key">Space</div> <div class="function">Fire Gun</div>
+        </div>
+        <div class="control">
+          <div class="key">1</div> <div class="function">Switch to Pistol</div>
+        </div>
+        <div class="control">
+          <div class="key">2</div> <div class="function">Switch to Shotgun</div>
+        </div>
+        <div class="control">
+          <div class="key">3</div> <div class="function">Switch to Laser</div>
+        </div>
+    </div>
+  <div>
 </body>
 
 </html>
