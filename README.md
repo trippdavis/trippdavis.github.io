@@ -2,7 +2,7 @@
 
 [Live] [Live Link]
 
-[Live Link]: trippdavis.github.io
+[Live Link]: http://trippdavis.github.io
 
 - [X] Create accounts
 - [X] Create sessions (log in)
