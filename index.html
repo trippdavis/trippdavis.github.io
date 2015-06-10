@@ -25,7 +25,16 @@
   </div>
 
   <script>
+    var refillAudio = new Audio("audio/refill.wav");
+    var backgroundMusic = new Audio("audio/contact.wav");
     var explosion = new Audio("audio/explosion.wav");
+    explosion.volume = 0.8;
+    var gunshotSound = new Audio("audio/gunshot.wav");
+    gunshotSound.volume = 0.12;
+    var shotgunSound = new Audio("audio/shotgun.wav");
+    shotgunSound.volume = 0.4;
+    var laserSound = new Audio("audio/laser.wav");
+    laserSound.volume = 0.5;
     var spaceshipImg = new Image();
     spaceshipImg.src = "images/spaceship.png";
     var spaceshipRecoilImg = new Image();
