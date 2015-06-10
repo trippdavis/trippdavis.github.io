@@ -3,6 +3,8 @@
 <head>
   <title>Asteroids</title>
   <script src="javascripts/jquery-2.1.4.min.js"></script>
+  <script src="audio/loadAudio.js"></script>
+  <script src="images/loadImages.js"></script>
   <script src="lib/keymaster.js"></script>
   <script src="lib/util.js"></script>
   <script src="lib/movingObject.js"></script>
@@ -25,24 +27,6 @@
   </div>
 
   <script>
-    var refillSound = new Audio("audio/refill.wav");
-    var backgroundMusic = new Audio("audio/contact.wav");
-    var explosion = new Audio("audio/explosion.wav");
-    explosion.volume = 0.8;
-    var gunshotSound = new Audio("audio/gunshot.wav");
-    gunshotSound.volume = 0.12;
-    var shotgunSound = new Audio("audio/shotgun.wav");
-    shotgunSound.volume = 0.4;
-    var laserSound = new Audio("audio/laser.wav");
-    laserSound.volume = 0.5;
-    var spaceshipImg = new Image();
-    spaceshipImg.src = "images/spaceship.png";
-    var spaceshipRecoilImg = new Image();
-    spaceshipRecoilImg.src = "images/spaceshipRecoil.png";
-    var asteroidImg = new Image();
-    asteroidImg.src = "images/asteroid.png";
-    var spaceshipSafeImg = new Image();
-    spaceshipSafeImg.src = "images/spaceshipSafe.png";
     window.gameView = new Asteroids.GameView();
     window.gameView.start();
   </script>
